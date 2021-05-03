@@ -12,7 +12,6 @@ const AddCategory = ({ setCategories }) => {
         if(!inputValue) return;
         setCategories( cat => [...cat, inputValue] );
         setInputValue("");
-        
     }
 
     return (

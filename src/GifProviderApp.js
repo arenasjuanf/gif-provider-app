@@ -4,7 +4,7 @@ import Grid from './components/Grid';
 
 export const GifProviderApp = () => {
 
-    const [categories, setCategories] = useState(['Halo']);
+    const [categories, setCategories] = useState(['spiderman']);
 
     return (
         <>
