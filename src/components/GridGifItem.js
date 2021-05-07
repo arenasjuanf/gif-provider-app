@@ -1,5 +1,6 @@
+import PropTypes from 'prop-types';
 
-const GridGifItem = ( {id, title, url} ) => {
+const GridGifItem = ( {title, url} ) => {
 
     return(
         <div className="card animate__bounceIn">
@@ -10,6 +11,11 @@ const GridGifItem = ( {id, title, url} ) => {
            
         </div>
     )
+}
+
+GridGifItem.propTypes = {
+    url: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired
 }
 
 export default GridGifItem;
