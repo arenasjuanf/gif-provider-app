@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GifProviderApp/> tests <GifProviderApp/> component should show successfully 1`] = `
+<Fragment>
+  <span>
+    Gif-Provider
+  </span>
+  <AddCategory
+    setCategories={[Function]}
+  />
+  <hr />
+  <ul />
+</Fragment>
+`;

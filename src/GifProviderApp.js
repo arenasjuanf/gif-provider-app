@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import AddCategory from './components/AddCategory';
 import Grid from './components/Grid';
 
-export const GifProviderApp = () => {
+export const GifProviderApp = ({ defaultCategories = [] }) => {
 
-    const [categories, setCategories] = useState(['spiderman']);
+    const [categories, setCategories] = useState(defaultCategories);
 
     return (
         <>

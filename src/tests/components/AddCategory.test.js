@@ -30,4 +30,17 @@ describe("AddCategory tests", () => {
         expect(setCategories).not.toHaveBeenCalled();
     })
 
+
+    test("SetCategories and clear input", () => {
+        
+        const value = "chanclas";
+
+        const input = wrapper.find("input");
+        input.simulate('change',{ target: {value} })
+        const form = wrapper.find("form").simulate('submit', { preventDefault(){}});
+        expect(setCategories).toHaveBeenCalledTimes(1);
+        expect( input.prop('value')).toBe('');
+
+    })
+
 })
